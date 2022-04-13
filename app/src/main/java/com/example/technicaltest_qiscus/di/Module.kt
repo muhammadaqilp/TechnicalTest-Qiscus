@@ -7,7 +7,7 @@ import com.example.technicaltest_qiscus.domain.usecase.user.UserInteractor
 import com.example.technicaltest_qiscus.domain.usecase.user.UserUseCase
 import com.example.technicaltest_qiscus.ui.login.MainViewModel
 import com.example.technicaltest_qiscus.util.UserPreferences
-import org.koin.android.viewmodel.dsl.viewModel
+import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
 
 val userUseCaseModule = module {

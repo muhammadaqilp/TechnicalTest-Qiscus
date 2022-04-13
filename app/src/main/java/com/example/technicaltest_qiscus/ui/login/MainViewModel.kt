@@ -34,7 +34,7 @@ class MainViewModel(private val userUseCase: UserUseCase) : ViewModel() {
 
     fun start() = userUseCase.getCurrentUser(object : Action<User> {
         override fun call(t: User) {
-            _currentUser.value = t != null
+            _currentUser.value = true
         }
     }, object : Action<Throwable> {
         override fun call(t: Throwable) {
