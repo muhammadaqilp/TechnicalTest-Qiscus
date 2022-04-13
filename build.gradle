@@ -3,7 +3,6 @@ buildscript {
     repositories {
         google()
         mavenCentral()
-        maven { url "https://artifactory.qiscus.com/artifactory/qiscus-library-open-source" }
     }
     dependencies {
         classpath "com.android.tools.build:gradle:7.0.4"
@@ -27,6 +26,12 @@ buildscript {
         gson = "2.9.0"
 
         viewbinding_version = "1.5.3"
+
+        multidex_version = "2.0.1"
+
+//        koin_version = "3.1.5"
+
+        koin_version = "2.1.6"
     }
 }
 
