@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import by.kirich1409.viewbindingdelegate.viewBinding
 import com.example.technicaltest_qiscus.R
 import com.example.technicaltest_qiscus.databinding.ActivityListChatBinding
+import com.example.technicaltest_qiscus.ui.contact.ListContactActivity
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class ListChatActivity : AppCompatActivity(R.layout.activity_list_chat),
@@ -41,6 +42,10 @@ class ListChatActivity : AppCompatActivity(R.layout.activity_list_chat),
             setHasFixedSize(true)
             layoutManager = LinearLayoutManager(this@ListChatActivity)
             adapter = roomChatAdapter
+        }
+
+        binding.fab.setOnClickListener {
+            ListContactActivity.start(this)
         }
     }
 
