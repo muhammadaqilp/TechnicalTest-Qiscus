@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
             .map { password ->
                 password.length < 6
             }
-        usernameStream.subscribe {
+        passwordStream.subscribe {
             showPasswordMinimalAlert(it)
         }
 
