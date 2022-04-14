@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.request.RequestOptions
 import com.example.technicaltest_qiscus.R
 import com.example.technicaltest_qiscus.databinding.ItemListRoomchatBinding
-import com.example.technicaltest_qiscus.ui.SortedRecyclerViewAdapter
+import com.example.technicaltest_qiscus.util.SortedRecyclerViewAdapter
 import com.example.technicaltest_qiscus.util.DateUtil
 import com.qiscus.nirmana.Nirmana
 import com.qiscus.sdk.chat.core.data.model.QiscusChatRoom

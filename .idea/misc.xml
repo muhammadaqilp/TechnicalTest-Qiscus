@@ -5,7 +5,9 @@
       <map>
         <entry key="..\:/AndroidStudioProjects/TechnicalTestQiscus/app/src/main/res/drawable/bg_circle.xml" value="0.15092592592592594" />
         <entry key="..\:/AndroidStudioProjects/TechnicalTestQiscus/app/src/main/res/layout/activity_list_chat.xml" value="0.17552083333333332" />
+        <entry key="..\:/AndroidStudioProjects/TechnicalTestQiscus/app/src/main/res/layout/activity_list_contact.xml" value="0.17552083333333332" />
         <entry key="..\:/AndroidStudioProjects/TechnicalTestQiscus/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/TechnicalTestQiscus/app/src/main/res/layout/item_list_contacts.xml" value="0.14666666666666667" />
         <entry key="..\:/AndroidStudioProjects/TechnicalTestQiscus/app/src/main/res/layout/item_list_roomchat.xml" value="0.16666666666666666" />
       </map>
     </option>
