@@ -1,10 +1,7 @@
 package com.example.technicaltest_qiscus
 
 import android.app.Application
-import com.example.technicaltest_qiscus.di.prefModule
-import com.example.technicaltest_qiscus.di.userRepositoryModule
-import com.example.technicaltest_qiscus.di.userUseCaseModule
-import com.example.technicaltest_qiscus.di.viewModelModule
+import com.example.technicaltest_qiscus.di.*
 import com.qiscus.sdk.chat.core.QiscusCore
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
@@ -20,7 +17,9 @@ class MyApplication : Application() {
             modules(
                 listOf(
                     userRepositoryModule,
+                    chatRepositoryModule,
                     userUseCaseModule,
+                    chatUseCaseModule,
                     viewModelModule,
                     prefModule
                 )
