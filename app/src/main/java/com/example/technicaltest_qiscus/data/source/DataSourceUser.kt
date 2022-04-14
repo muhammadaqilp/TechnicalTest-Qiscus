@@ -13,7 +13,7 @@ import rx.Observable
 import rx.android.schedulers.AndroidSchedulers
 import rx.schedulers.Schedulers
 
-class DataSource(private val userPreferences: UserPreferences) {
+class DataSourceUser(private val userPreferences: UserPreferences) {
 
     fun login(
         username: String,
