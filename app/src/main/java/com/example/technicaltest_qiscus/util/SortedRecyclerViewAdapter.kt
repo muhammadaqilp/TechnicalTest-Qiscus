@@ -1,4 +1,4 @@
-package com.example.technicaltest_qiscus.ui
+package com.example.technicaltest_qiscus.util
 
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.SortedList
