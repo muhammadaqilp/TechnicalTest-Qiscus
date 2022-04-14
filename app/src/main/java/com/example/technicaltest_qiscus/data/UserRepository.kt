@@ -1,11 +1,11 @@
 package com.example.technicaltest_qiscus.data
 
-import com.example.technicaltest_qiscus.data.source.DataSource
+import com.example.technicaltest_qiscus.data.source.DataSourceUser
 import com.example.technicaltest_qiscus.domain.model.User
-import com.example.technicaltest_qiscus.domain.repository.IUserRepository
+import com.example.technicaltest_qiscus.domain.repository.user.IUserRepository
 import com.example.technicaltest_qiscus.util.Action
 
-class UserRepository(private val dataSource: DataSource) : IUserRepository {
+class UserRepository(private val dataSourceUser: DataSourceUser) : IUserRepository {
 
     override fun login(
         username: String,
@@ -14,11 +14,11 @@ class UserRepository(private val dataSource: DataSource) : IUserRepository {
         onSuccess: Action<User>,
         onError: Action<Throwable>
     ) {
-        dataSource.login(username, password, name, onSuccess, onError)
+        dataSourceUser.login(username, password, name, onSuccess, onError)
     }
 
     override fun getCurrentUser(onSuccess: Action<User>, onError: Action<Throwable>) {
-        dataSource.getCurrentUser(onSuccess, onError)
+        dataSourceUser.getCurrentUser(onSuccess, onError)
     }
 
     override fun getUsers(
@@ -28,14 +28,14 @@ class UserRepository(private val dataSource: DataSource) : IUserRepository {
         onSuccess: Action<List<User>>,
         onError: Action<Throwable>
     ) {
-        dataSource.getUsers(page, limit, query, onSuccess, onError)
+        dataSourceUser.getUsers(page, limit, query, onSuccess, onError)
     }
 
     override fun logout() {
-        dataSource.logout()
+        dataSourceUser.logout()
     }
 
     override fun setDeviceToken(token: String) {
-        dataSource.setDeviceToken(token)
+        dataSourceUser.setDeviceToken(token)
     }
 }

@@ -1,4 +1,4 @@
-package com.example.technicaltest_qiscus.domain.repository
+package com.example.technicaltest_qiscus.domain.repository.user
 
 import com.example.technicaltest_qiscus.domain.model.User
 import com.example.technicaltest_qiscus.util.Action

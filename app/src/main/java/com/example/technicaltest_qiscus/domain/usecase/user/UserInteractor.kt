@@ -1,7 +1,7 @@
 package com.example.technicaltest_qiscus.domain.usecase.user
 
 import com.example.technicaltest_qiscus.domain.model.User
-import com.example.technicaltest_qiscus.domain.repository.IUserRepository
+import com.example.technicaltest_qiscus.domain.repository.user.IUserRepository
 import com.example.technicaltest_qiscus.util.Action
 
 class UserInteractor(private val userRepository: IUserRepository) : UserUseCase {
