@@ -2,6 +2,7 @@ package com.example.technicaltest_qiscus
 
 import android.app.Application
 import com.example.technicaltest_qiscus.di.*
+import com.qiscus.nirmana.Nirmana
 import com.qiscus.sdk.chat.core.QiscusCore
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
@@ -26,5 +27,6 @@ class MyApplication : Application() {
             )
         }
         QiscusCore.setup(this, BuildConfig.QISCUS_APP_ID)
+        Nirmana.init(this)
     }
 }

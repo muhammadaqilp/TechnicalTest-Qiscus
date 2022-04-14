@@ -10,6 +10,7 @@ import com.example.technicaltest_qiscus.domain.usecase.chat.ChatInteractor
 import com.example.technicaltest_qiscus.domain.usecase.chat.ChatUseCase
 import com.example.technicaltest_qiscus.domain.usecase.user.UserInteractor
 import com.example.technicaltest_qiscus.domain.usecase.user.UserUseCase
+import com.example.technicaltest_qiscus.ui.contact.ListContactViewModel
 import com.example.technicaltest_qiscus.ui.listchat.ListChatViewModel
 import com.example.technicaltest_qiscus.ui.login.MainViewModel
 import com.example.technicaltest_qiscus.util.UserPreferences
@@ -37,6 +38,7 @@ val chatRepositoryModule = module {
 val viewModelModule = module {
     viewModel { MainViewModel(get()) }
     viewModel { ListChatViewModel(get()) }
+    viewModel { ListContactViewModel(get(), get()) }
 }
 
 val prefModule = module {
